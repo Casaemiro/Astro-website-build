@@ -4,6 +4,7 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+
 ---
 
 <!DOCTYPE html>
@@ -16,8 +17,13 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		
+		<main>
+			<slot />
+		</main>
+		
 	</body>
+	jhgjh
 </html>
 <style>
 	:root {
