@@ -1,15 +1,30 @@
 ---
-import Footer from '../components/footer.astro';
+import {Icon} from 'astro-icon';
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Reviews from '../components/Reviews.astro';
+import Pricing from '../components/Pricing.astro';
+import Clients from '../components/Clients.astro';
+import CTA from '../components/CTA.astro';
 ---
-<html>
-	<head>
-		<title>Static Webpage</title>
-		<style is:global>
-			@import "../styles/index.css";
-		</style>
-	</head>
-	<body>
-		<Footer></Footer>
-	</body>
-</html>
 
+<Layout title="Desgn Landing Page">
+  
+  <Hero />
+
+  <section class="programmer container blur grid-sm">
+    <Icon name="programmer" width="400px" class="programmer-icon" alt="Programmer Picture" aria-hidden="true" />
+  </section>
+
+  <Services />
+  
+  <Reviews />
+ 
+  <Pricing />
+  
+  <Clients />
+  
+  <CTA />
+
+</Layout>
